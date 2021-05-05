@@ -68,3 +68,13 @@
     filter: grayscale(100%);
     border-radius: 5%;
 }
+
+.ex-9-img {
+    transition: 2s;
+}
+
+.ex-9-img:hover {
+    filter: sepia(100%);
+    border-radius: 10%;
+    transform: scale(1.3)
+}
