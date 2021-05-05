@@ -82,8 +82,56 @@
 .ex-10-icon {
     animation: spin 2s linear infinite;
 }
+
 @keyframes spin {
     0% {
         transform: rotate(1turn);
+    }
+}
+
+.ex-11-icon:hover {
+    animation: spinpartial 2s linear;
+}
+
+@keyframes spinpartial {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: moveTopWhite 2s linear;
+}
+
+@keyframes moveTopWhite {
+    0% {
+        left: 20%;
+    }
+    50% {
+        left: calc(100% - 40px);
+    }
+    100% {
+        left: 20%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: moveBottomWhite 2s linear;
+}
+
+@keyframes moveBottomWhite {
+    0% {
+        right: 10%;
+    }
+    50% {
+        right: calc(100% - 40px);
+    }
+    100% {
+        right: 10%;
     }
 }
